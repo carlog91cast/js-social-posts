@@ -123,7 +123,7 @@ posts.forEach(element => {
         <div class="likes js-likes">
             <div class="likes__cta">
                 <a class="like-button  js-like-button" href="#" data-postid="1">
-                    <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
+                    <i class=" fas fa-thumbs-up" aria-hidden="true"></i>
                     <span class="like-button__label">Mi Piace</span>
                 </a>
             </div>
@@ -134,4 +134,16 @@ posts.forEach(element => {
     </div>
 </div>`
     insertPost.append(createPost);
+});
+
+// milestone 2
+
+let btnLikes = document.querySelector('div.likes__cta');
+let textLikes = document.querySelector('like-button');
+btnLikes.addEventListener('click', function () {
+    posts.forEach(element => {
+        btnLikes.classList.add('active-blue');
+        textLikes.classList.add('like-button--liked');
+    });
+
 });
