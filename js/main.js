@@ -139,14 +139,29 @@ posts.forEach(element => {
 
 // milestone 2
 
-const btnGenera= document.querySelectorAll(`a`);
+const textGenera= document.querySelectorAll(`a`);
+
+
+
+textGenera.forEach(element => {
+
+    element.addEventListener('click', (e) => {
+        e.preventDefault();
+        element.classList.toggle("like-button--liked");
+       
+
+    });
+
+});
+const btnGenera = document.querySelectorAll(`.like-button`);
+
 
 
 btnGenera.forEach(element => {
 
     element.addEventListener('click', (e) => {
         e.preventDefault();
-        element.classList.toggle("like-button--liked");
+        element.classList.toggle("active-blue");
        
 
     });
