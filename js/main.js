@@ -139,7 +139,7 @@ posts.forEach(element => {
 
 // milestone 2
 
-const btnGenera= document.querySelectorAll(`.likes__cta>a`);
+const btnGenera= document.querySelectorAll(``);
 
 btnGenera.forEach(element => {
 
