@@ -139,13 +139,16 @@ posts.forEach(element => {
 
 // milestone 2
 
-const btnGenera= document.querySelectorAll(``);
+const btnGenera= document.querySelectorAll(`a`);
+
 
 btnGenera.forEach(element => {
 
     element.addEventListener('click', (e) => {
-        e.preventDefault;
+        e.preventDefault();
         element.classList.toggle("like-button--liked");
+       
+
     });
 
 });
